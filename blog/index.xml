@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on asyncial</title>
+    <link>https://asyncial.github.io/blog/</link>
+    <description>Recent content in Blog on asyncial</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 01 Feb 2017 18:52:47 +0200</lastBuildDate>
+    
+	<atom:link href="https://asyncial.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>organize your .xresources like a pro</title>
+      <link>https://asyncial.github.io/blog/organize-your-.xresources-like-a-pro/</link>
+      <pubDate>Wed, 01 Feb 2017 18:52:47 +0200</pubDate>
+      
+      <guid>https://asyncial.github.io/blog/organize-your-.xresources-like-a-pro/</guid>
+      <description>If you are anything like me, you like to customize your terminal colorscheme. And if you are even more like me, you are using urxvt and need to edit your ~/.Xresources to changes your terminals colors. So I assume your .Xresources are mess an you want to know, how to get them clean and easy to read and customize. If you already have a working system, there is no need to change it.</description>
+    </item>
+    
+    <item>
+      <title>10 more distros</title>
+      <link>https://asyncial.github.io/blog/10-more-distros/</link>
+      <pubDate>Fri, 19 Aug 2016 18:50:00 +0200</pubDate>
+      
+      <guid>https://asyncial.github.io/blog/10-more-distros/</guid>
+      <description>I’ve looked at ten more Linux distros! Again, I have the urge to share my experiences with the ca. 15 different visitors my blog already has, because I guess, they are very interested in my texts here. Or they are not. I only know one of them, and I didn’t ask him. However here is the list of the distros:
+ Alpine Linux 3.4.3 Chakra Linux 2016.02 Ian Linux Mint Debian Edition 2 NixOS 16.</description>
+    </item>
+    
+    <item>
+      <title>casual distroreviews</title>
+      <link>https://asyncial.github.io/blog/casual-distroreviews/</link>
+      <pubDate>Fri, 12 Aug 2016 18:47:02 +0200</pubDate>
+      
+      <guid>https://asyncial.github.io/blog/casual-distroreviews/</guid>
+      <description>In the last few weeks, I took a look at 17 different Linux distributions. Why? Because I had nothing else to do and thought it was interesting to see, how the different systems feel. For the first round of this, I looked more at out-of-the-box, beginner-frienly-ish distros, because I’m lazy. I don’t want to say something about any of these distribution, but only to those, which were interesting or special in some way.</description>
+    </item>
+    
+    <item>
+      <title>how to debrand your xperia z3</title>
+      <link>https://asyncial.github.io/blog/how-to-debrand-your-xperia-z3/</link>
+      <pubDate>Sun, 10 Apr 2016 18:23:33 +0200</pubDate>
+      
+      <guid>https://asyncial.github.io/blog/how-to-debrand-your-xperia-z3/</guid>
+      <description>When I got myself a new Z3 the other day, it had a T-Mobile software branding. I think, you know, what that means: stupid bloatware and less chance to get updates. So I decided to get rid of it. That’s how you do it:
+ Do a back up of your data! Get and install the Sony PC Companion, if you don’t already did. Get and install Flashtool. I recommend to use the torrent link, because the download server was quite slow, when I tried it.</description>
+    </item>
+    
+  </channel>
+</rss>
