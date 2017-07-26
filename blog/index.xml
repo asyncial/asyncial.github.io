@@ -6,10 +6,19 @@
     <description>Recent content in Blog on asyncial</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 01 Feb 2017 18:52:47 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 26 Jul 2017 15:03:00 +0200</lastBuildDate>
     
 	<atom:link href="https://asyncial.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Status of the Qt desktop</title>
+      <link>https://asyncial.github.io/blog/the-status-of-the-qt-desktop/</link>
+      <pubDate>Wed, 26 Jul 2017 15:03:00 +0200</pubDate>
+      
+      <guid>https://asyncial.github.io/blog/the-status-of-the-qt-desktop/</guid>
+      <description>In the last few years, Qt-based desktop environments are becoming more and more popular. There are a lot of them, by now. Of course the old, trusty KDE, now in version 5.10, as &amp;ldquo;flagship&amp;rdquo; of the Qt crew, but there are more. LXQt as the lightweight choice, a fusion between LXDE and Razor-Qt, the highly experimental Liri, trying to implement a very modern looking desktop, very similar to Google&amp;rsquo;s Material Design, the &amp;hellip; different DE, called theShell, of course Lumina mainly targeted at *BSD, but of course portable enough, to run on Linux too, and in the future Budgie is going to be Qt-based as well!</description>
+    </item>
     
     <item>
       <title>organize your .xresources like a pro</title>
