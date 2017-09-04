@@ -6,12 +6,17 @@
     <description>Recent content in Blog on asyncial</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
+<<<<<<< HEAD
     <lastBuildDate>Mon, 04 Sep 2017 01:27:17 +0200</lastBuildDate>
+=======
+    <lastBuildDate>Wed, 26 Jul 2017 15:03:00 +0200</lastBuildDate>
+>>>>>>> f8ee1822df68e47ab878dd6811278215a7263d93
     
 	<atom:link href="https://asyncial.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+<<<<<<< HEAD
       <title>Speed up URxvt</title>
       <link>https://asyncial.github.io/blog/speed-up-urxvt/</link>
       <pubDate>Mon, 04 Sep 2017 01:27:17 +0200</pubDate>
@@ -22,6 +27,8 @@
     </item>
     
     <item>
+=======
+>>>>>>> f8ee1822df68e47ab878dd6811278215a7263d93
       <title>The Status of the Qt desktop</title>
       <link>https://asyncial.github.io/blog/the-status-of-the-qt-desktop/</link>
       <pubDate>Wed, 26 Jul 2017 15:03:00 +0200</pubDate>

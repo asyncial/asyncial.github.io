@@ -3,11 +3,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+<<<<<<< HEAD
     <loc>https://asyncial.github.io/blog/speed-up-urxvt/</loc>
     <lastmod>2017-09-04T01:27:17+02:00</lastmod>
   </url>
   
   <url>
+=======
+>>>>>>> f8ee1822df68e47ab878dd6811278215a7263d93
     <loc>https://asyncial.github.io/blog/the-status-of-the-qt-desktop/</loc>
     <lastmod>2017-07-26T15:03:00+02:00</lastmod>
   </url>
@@ -44,7 +47,11 @@
   
   <url>
     <loc>https://asyncial.github.io/blog/</loc>
+<<<<<<< HEAD
     <lastmod>2017-09-04T01:27:17+02:00</lastmod>
+=======
+    <lastmod>2017-07-26T15:03:00+02:00</lastmod>
+>>>>>>> f8ee1822df68e47ab878dd6811278215a7263d93
     <priority>0</priority>
   </url>
   
@@ -66,7 +73,11 @@
   
   <url>
     <loc>https://asyncial.github.io/</loc>
+<<<<<<< HEAD
     <lastmod>2017-09-04T01:27:17+02:00</lastmod>
+=======
+    <lastmod>2017-07-26T15:03:00+02:00</lastmod>
+>>>>>>> f8ee1822df68e47ab878dd6811278215a7263d93
     <priority>0</priority>
   </url>
   
