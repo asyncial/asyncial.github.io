@@ -17,7 +17,7 @@
       <pubDate>Mon, 04 Sep 2017 01:27:17 +0200</pubDate>
       
       <guid>https://asyncial.github.io/blog/speed-up-urxvt/</guid>
-      <description>This blog post documents really quick, how you can get URxvt to be ready faster. I measured the time, my computer needed, to start instances of URxvt to a usable shell and close it again for 25 times. I tried that with bash, dash and zsh with and without oh-my-zsh. It measured it with time(1). My test script looks like this:
+      <description>This blog post documents really quick, how you can get URxvt to be ready in less time. I measured the time, my computer needed, to start instances of URxvt to a usable shell and close it again for 25 times. I tried that with bash, dash and zsh with and without oh-my-zsh. It measured it with time(1). My test script looks like this:
 #! /bin/sh for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 do urxvt -e &#39;dash&#39; done  Of course, &amp;lsquo;dash&amp;rsquo; needs to be replaced with the shell, you want to use.</description>
     </item>
     
@@ -27,7 +27,7 @@
       <pubDate>Wed, 26 Jul 2017 15:03:00 +0200</pubDate>
       
       <guid>https://asyncial.github.io/blog/the-status-of-the-qt-desktop/</guid>
-      <description>In the last few years, Qt-based desktop environments are becoming more and more popular. There are a lot of them, by now. Of course the old, trusty KDE, now in version 5.10, as &amp;ldquo;flagship&amp;rdquo; of the Qt crew, but there are more. LXQt as the lightweight choice, a fusion between LXDE and Razor-Qt, the highly experimental Liri, trying to implement a very modern looking desktop, very similar to Google&amp;rsquo;s Material Design, the &amp;hellip; different DE, called theShell, of course Lumina mainly targeted at *BSD, but of course portable enough, to run on Linux too, and in the future Budgie is going to be Qt-based as well!</description>
+      <description>In the last few years, Qt-based desktop environments became more and more popular. There are quite a lot of them now. Of course we have the old, trusty KDE, now in version 5.10, as &amp;ldquo;flagship&amp;rdquo; of the Qt crew, but there are more. LXQt as the lightweight choice, which is a fusion between LXDE and Razor-Qt, the highly experimental Liri, trying to implement a very modern looking desktop, very similar to Google&amp;rsquo;s Material Design, the &amp;hellip; different DE, called theShell, of course Lumina mainly targeted at *BSD, but of course portable enough, to run on Linux too, and Budgie is going to be Qt-based in the future as well!</description>
     </item>
     
     <item>
@@ -65,7 +65,7 @@ whoami I am a computer science student. I like (in no particular order) *NIX, mi
       <pubDate>Fri, 19 Aug 2016 18:50:00 +0200</pubDate>
       
       <guid>https://asyncial.github.io/blog/10-more-distros/</guid>
-      <description>I’ve looked at ten more Linux distros! Again, I have the urge to share my experiences with the ca. 15 different visitors my blog already has, because I guess, they are very interested in my texts here. Or they are not. I only know one of them, and I didn’t ask him. However here is the list of the distros:
+      <description>I’ve looked at ten more Linux distros! Again, I have the urge to share my experiences with the ca. 15 different visitors my blog already had, because I guess, they are very interested in my texts here. Or they are not. I only know one of them, and I didn’t ask him. However here is the list of the distros:
  Alpine Linux 3.4.3 Chakra Linux 2016.02 Ian Linux Mint Debian Edition 2 NixOS 16.</description>
     </item>
     
@@ -75,7 +75,7 @@ whoami I am a computer science student. I like (in no particular order) *NIX, mi
       <pubDate>Fri, 12 Aug 2016 18:47:02 +0200</pubDate>
       
       <guid>https://asyncial.github.io/blog/casual-distroreviews/</guid>
-      <description>In the last few weeks, I took a look at 17 different Linux distributions. Why? Because I had nothing else to do and thought it was interesting to see, how the different systems feel. For the first round of this, I looked more at out-of-the-box, beginner-frienly-ish distros, because I’m lazy. I don’t want to say something about any of these distribution, but only to those, which were interesting or special in some way.</description>
+      <description>In the last few weeks, I took a look at 17 different Linux distributions. Why? Because I had nothing else to do and thought it was interesting to see, how the different systems feel. For the first round of this, I looked more at out-of-the-box, beginner-frienly-ish distros, because I’m lazy. I don’t want to say something about any of these distribution, but only about those, which were interesting or special in some way.</description>
     </item>
     
     <item>

@@ -9,11 +9,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
 <meta name="author" content="Asyncial">
-<meta name="description" content="This blog post documents really quick, how you can get URxvt to be ready faster. I measured the time, my computer needed, to start instances of URxvt to a usable shell and close it again for 25 times. I tried that with bash, dash and zsh with and without oh-my-zsh. It measured it with time(1). My test script looks like this:
+<meta name="description" content="This blog post documents really quick, how you can get URxvt to be ready in less time. I measured the time, my computer needed, to start instances of URxvt to a usable shell and close it again for 25 times. I tried that with bash, dash and zsh with and without oh-my-zsh. It measured it with time(1). My test script looks like this:
 #! /bin/sh for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 do urxvt -e &#39;dash&#39; done  Of course, &lsquo;dash&rsquo; needs to be replaced with the shell, you want to use.">
 
 <meta property="og:title" content="Speed up URxvt" />
-<meta property="og:description" content="This blog post documents really quick, how you can get URxvt to be ready faster. I measured the time, my computer needed, to start instances of URxvt to a usable shell and close it again for 25 times. I tried that with bash, dash and zsh with and without oh-my-zsh. It measured it with time(1). My test script looks like this:
+<meta property="og:description" content="This blog post documents really quick, how you can get URxvt to be ready in less time. I measured the time, my computer needed, to start instances of URxvt to a usable shell and close it again for 25 times. I tried that with bash, dash and zsh with and without oh-my-zsh. It measured it with time(1). My test script looks like this:
 #! /bin/sh for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 do urxvt -e &#39;dash&#39; done  Of course, &lsquo;dash&rsquo; needs to be replaced with the shell, you want to use." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://asyncial.github.io/blog/speed-up-urxvt/" />
@@ -58,11 +58,11 @@
 
 
     
-    <link rel="stylesheet" href="https://asyncial.github.io/css/reset.css?t=2017-09-04%2003%3a12%3a45.181504062%20%2b0200%20CEST">
-    <link rel="stylesheet" href="https://asyncial.github.io/css/pygments.css?t=2017-09-04%2003%3a12%3a45.181504062%20%2b0200%20CEST">
-    <link rel="stylesheet" href="https://asyncial.github.io/css/main.css?t=2017-09-04%2003%3a12%3a45.181504062%20%2b0200%20CEST">
+    <link rel="stylesheet" href="https://asyncial.github.io/css/reset.css?t=2017-09-19%2003%3a19%3a20.422927483%20%2b0200%20CEST%20m%3d%2b0.110105025">
+    <link rel="stylesheet" href="https://asyncial.github.io/css/pygments.css?t=2017-09-19%2003%3a19%3a20.422927483%20%2b0200%20CEST%20m%3d%2b0.110105025">
+    <link rel="stylesheet" href="https://asyncial.github.io/css/main.css?t=2017-09-19%2003%3a19%3a20.422927483%20%2b0200%20CEST%20m%3d%2b0.110105025">
     
-        <link rel="stylesheet" href="https://asyncial.github.io/css/override.css?t=2017-09-04%2003%3a12%3a45.181504062%20%2b0200%20CEST">
+        <link rel="stylesheet" href="https://asyncial.github.io/css/override.css?t=2017-09-19%2003%3a19%3a20.422927483%20%2b0200%20CEST%20m%3d%2b0.110105025">
     
 
 
@@ -161,7 +161,7 @@
             <div class="markdown">
                 
 
-<p>This blog post documents really quick, how you can get <a href="[http://software.schmorp.de/pkg/rxvt-unicode.html">URxvt</a> to be ready faster. I measured the time, my computer needed, to start instances of URxvt to a usable shell and close it again for 25 times. I tried that with <a href="https://tiswww.case.edu/php/chet/bash/bashtop.html">bash</a>, <a href="https://www.in-ulm.de/~mascheck/various/ash/⎈">dash</a> and <a href="http://www.zsh.org/">zsh</a> with and without <a href="http://ohmyz.sh/">oh-my-zsh</a>. It measured it with <a href="http://man7.org/linux/man-pages/man1/time.1.html">time(1)</a>. My test script looks like this:</p>
+<p>This blog post documents really quick, how you can get <a href="[http://software.schmorp.de/pkg/rxvt-unicode.html">URxvt</a> to be ready in less time. I measured the time, my computer needed, to start instances of URxvt to a usable shell and close it again for 25 times. I tried that with <a href="https://tiswww.case.edu/php/chet/bash/bashtop.html">bash</a>, <a href="https://www.in-ulm.de/~mascheck/various/ash/⎈">dash</a> and <a href="http://www.zsh.org/">zsh</a> with and without <a href="http://ohmyz.sh/">oh-my-zsh</a>. It measured it with <a href="http://man7.org/linux/man-pages/man1/time.1.html">time(1)</a>. My test script looks like this:</p>
 
 <pre><code>#! /bin/sh
 
@@ -170,8 +170,8 @@ for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
 done
 </code></pre>
 
-<p>Of course, &lsquo;dash&rsquo; needs to be replaced with the shell, you want to use. It&rsquo;s not and a beautiful script, and I think, I will redo it sometime, to make it more flexible.
-The configs for all shells just consisted of <code>exit</code>, so they close immedietly after they&rsquo;re ready. The exception to this is my <a href="https://github.com/asyncial/dotfiles-maschine/blob/master/zsh/.zshrc">oh-my-zsh-config</a>, which is the one, I use at the moment, just with an <code>exit</code> appended in the last line.
+<p>Of course, &lsquo;dash&rsquo; needs to be replaced with the shell, you want to use. It&rsquo;s not and a beautiful script, and I think, I will redo it sometime, making it more flexible.
+The configs for all shells just consisted of <code>exit</code>, so they close immedietly after they&rsquo;re ready. The exception to this is my <a href="https://github.com/asyncial/dotfiles-maschine/blob/master/zsh/.zshrc">oh-my-zsh-config</a>, which is the one, I use at the moment, but with an <code>exit</code> appended in the last line.
 The machine I used is MASCHINE, my notebook, look at it&rsquo;s specs in my <a href="https://asyncial.github.io/about/">about</a> page.</p>
 
 <h3 id="what-to-do">What to do</h3>
@@ -183,7 +183,7 @@ URxvt.perl-ext:
 URxvt.perl-ext-common:
 </code></pre>
 
-<p>This disables the startup of the built-in perl interpreter. This sounds about right. But can&rsquo;t we get it even faster? Of course. URxvt comes with a client-server option. So, if we run the <code>urxvtd</code> daemon at boot time, we can start it&rsquo;s client <code>urxvtc</code> with insane time improvements. Just add this to your systems autostart:</p>
+<p>This disables the startup of the built-in perl interpreter. But can we get it even faster? Of course. URxvt comes with an optional client-server model. So, if we run the <code>urxvtd</code> daemon at boot time, we can start it&rsquo;s client <code>urxvtc</code> with insane time improvements. Just add this to your systems autostart file:</p>
 
 <pre><code>urxvtd -q -o -f &amp;
 </code></pre>
@@ -236,7 +236,7 @@ URxvt.perl-ext-common:
 
 <h3 id="conclusion">Conclusion</h3>
 
-<p>We can see, we now need only ~10-15 % of the time, we once needed to start a terminal. In the case of my config, that is only a difference about 0.15 second (for a single run), but it has gone from noticeable to unnoticable. I think, the difference could be even more important, if I had a traditional HDD. I can think of another optimization, which is recompiling the application without all unneeded features and with custom CFLAGS, to optimize for your processor architecture, but that might be overkill. However on a weaker system like the Raspberry Pi, it could be an option.</p>
+<p>We can see, that we now only need ~10-15 % of the time, we once needed to start a terminal window. In the case of my config, that is only a difference of about 0.15 second (for a single run), but it has gone from noticeable to unnoticable. I think, the difference could be even more important, if I had a traditional HDD. I can think of another optimization, which is recompiling the application without all unneeded features and with custom CFLAGS, to optimize for your processor architecture, but that might be overkill. However on a weaker system like the Raspberry Pi, it could be an option.</p>
 
 <h3 id="sources">Sources</h3>
 
@@ -268,8 +268,8 @@ URxvt.perl-ext-common:
         (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
             </div>
         </div>
     </div>
