@@ -6,10 +6,19 @@
     <description>Recent content in Blog on asyncial</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 04 Sep 2017 01:27:17 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 16 Feb 2018 22:20:57 +0100</lastBuildDate>
     
 	<atom:link href="https://asyncial.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Backup your current Vivaldi session automatically</title>
+      <link>https://asyncial.github.io/blog/backup-your-current-vivaldi-session-automatically/</link>
+      <pubDate>Fri, 16 Feb 2018 22:20:57 +0100</pubDate>
+      
+      <guid>https://asyncial.github.io/blog/backup-your-current-vivaldi-session-automatically/</guid>
+      <description>As you might know, I use Vivaldi. I really like it, because I think, it is a quite flexible window manager. I can have tens and hundreds of tabs open, but I can sort them, group them, view them as a tree, even tile them. Vivaldi has a downside though. It is not exactly the most stable browser on my system. So, from time to time, Vivaldi crashes and loses all my tabs.</description>
+    </item>
     
     <item>
       <title>Speed up URxvt</title>
