@@ -57,11 +57,11 @@
 
 
     
-    <link rel="stylesheet" href="https://asyncial.github.io/css/reset.css?t=2018-02-16%2023%3a06%3a30.680944662%20%2b0100%20CET%20m%3d%2b0.045085360">
-    <link rel="stylesheet" href="https://asyncial.github.io/css/pygments.css?t=2018-02-16%2023%3a06%3a30.680944662%20%2b0100%20CET%20m%3d%2b0.045085360">
-    <link rel="stylesheet" href="https://asyncial.github.io/css/main.css?t=2018-02-16%2023%3a06%3a30.680944662%20%2b0100%20CET%20m%3d%2b0.045085360">
+    <link rel="stylesheet" href="https://asyncial.github.io/css/reset.css?t=2018-02-16%2023%3a07%3a34.732257937%20%2b0100%20CET%20m%3d%2b0.057269536">
+    <link rel="stylesheet" href="https://asyncial.github.io/css/pygments.css?t=2018-02-16%2023%3a07%3a34.732257937%20%2b0100%20CET%20m%3d%2b0.057269536">
+    <link rel="stylesheet" href="https://asyncial.github.io/css/main.css?t=2018-02-16%2023%3a07%3a34.732257937%20%2b0100%20CET%20m%3d%2b0.057269536">
     
-        <link rel="stylesheet" href="https://asyncial.github.io/css/override.css?t=2018-02-16%2023%3a06%3a30.680944662%20%2b0100%20CET%20m%3d%2b0.045085360">
+        <link rel="stylesheet" href="https://asyncial.github.io/css/override.css?t=2018-02-16%2023%3a07%3a34.732257937%20%2b0100%20CET%20m%3d%2b0.057269536">
     
 
 
@@ -166,11 +166,15 @@
                 </div>
             </div>
             <div class="markdown">
-                <p>As you might know, I use <a href="https://vivaldi.com">Vivaldi</a>. I really like it, because I think, it is a quite flexible window manager. I can have tens and hundreds of tabs open, but I can sort them, group them, view them as a tree, even tile them. Vivaldi has a downside though. It is not exactly the most stable browser on my system. So, from time to time, Vivaldi crashes and loses all my tabs. It&rsquo;s doesn&rsquo;t happen all the time, but sometimes. Because this annoyed me one time to often, I have written a session backup solution in POSIX shell (+ local variables).
-There are three scripts. One is called <a href="https://raw.githubusercontent.com/asyncial/bin/master/backup_vivaldi_session.sh">backup_vivaldi_session.sh</a>. It is responsible for saving the <code>Current Session</code> file, stored in <code>~/.config/vivaldi/Default</code>, periodically in a user definded folder. To set the backup folder, change the <code>backup_path</code> variable in the script. You can also change the number of backups, that are kept and the how often the backup should run. The script automatically stops, when Vivaldi is not running on the system.
-The next one helps you restore your Vivaldi session after a crash. It is called <a href="https://raw.githubusercontent.com/asyncial/bin/master/restore_vivaldi_session.sh">restore_vivaldi_session.sh</a>. You use it, by invoking <code>restore_vivaldi_session.sh -n 3</code>. This way, you would restore the third most recent session backed by the script. Without any arguments, it uses the most recent one. (Equivalent to <code>-n 0</code>). <strong>But before you can do that</strong>, you need to set the same path, as in the backup script in the variable <code>VIVALDI_BACKUP_DIR</code>.
-The last script is a starter script. It assumes the backup script and the vivaldi-bin file in the <code>$PATH</code>. It is just called <a href="https://raw.githubusercontent.com/asyncial/bin/master/vivaldi">vivaldi</a> and starts Vivaldi, as well as the backup script, after a short waiting time, to let vivaldi finish it&rsquo;s startup.
-You can find all the scripts and more in my <a href="https://github.com/asyncial/bin">/bin/ repository</a> on GitHub.I put all of them in my <code>$PATH</code> and have <code>alias vivaldi-bin=&quot;vivaldi&quot;</code> in my shell startup file, so everytime Vivaldi runs, it is safe against crashes.</p>
+                <p>As you might know, I use <a href="https://vivaldi.com">Vivaldi</a>. I really like it, because I think, it is a quite flexible window manager. I can have tens and hundreds of tabs open, but I can sort them, group them, view them as a tree, even tile them. Vivaldi has a downside though. It is not exactly the most stable browser on my system. So, from time to time, Vivaldi crashes and loses all my tabs. It&rsquo;s doesn&rsquo;t happen all the time, but sometimes. Because this annoyed me one time to often, I have written a session backup solution in POSIX shell (+ local variables).</p>
+
+<p>There are three scripts. One is called <a href="https://raw.githubusercontent.com/asyncial/bin/master/backup_vivaldi_session.sh">backup_vivaldi_session.sh</a>. It is responsible for saving the <code>Current Session</code> file, stored in <code>~/.config/vivaldi/Default</code>, periodically in a user definded folder. To set the backup folder, change the <code>backup_path</code> variable in the script. You can also change the number of backups, that are kept and the how often the backup should run. The script automatically stops, when Vivaldi is not running on the system.</p>
+
+<p>The next one helps you restore your Vivaldi session after a crash. It is called <a href="https://raw.githubusercontent.com/asyncial/bin/master/restore_vivaldi_session.sh">restore_vivaldi_session.sh</a>. You use it, by invoking <code>restore_vivaldi_session.sh -n 3</code>. This way, you would restore the third most recent session backed by the script. Without any arguments, it uses the most recent one. (Equivalent to <code>-n 0</code>). <strong>But before you can do that</strong>, you need to set the same path, as in the backup script in the variable <code>VIVALDI_BACKUP_DIR</code>.</p>
+
+<p>The last script is a starter script. It assumes the backup script and the vivaldi-bin file in the <code>$PATH</code>. It is just called <a href="https://raw.githubusercontent.com/asyncial/bin/master/vivaldi">vivaldi</a> and starts Vivaldi, as well as the backup script, after a short waiting time, to let vivaldi finish it&rsquo;s startup.</p>
+
+<p>You can find all the scripts and more in my <a href="https://github.com/asyncial/bin">/bin/ repository</a> on GitHub.I put all of them in my <code>$PATH</code> and have <code>alias vivaldi-bin=&quot;vivaldi&quot;</code> in my shell startup file, so everytime Vivaldi runs, it is safe against crashes.</p>
 
                 <br>
 		<p class="back-to-posts"><a href="https://asyncial.github.io/blog/">Back to posts</a></p>
