@@ -6,10 +6,19 @@
     <description>Recent content in Fixed on asyncial</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 03 May 2017 01:42:20 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 24 Apr 2018 00:48:18 +0200</lastBuildDate>
     
 	<atom:link href="https://asyncial.github.io/fixed/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning</title>
+      <link>https://asyncial.github.io/learning/</link>
+      <pubDate>Tue, 24 Apr 2018 00:48:18 +0200</pubDate>
+      
+      <guid>https://asyncial.github.io/learning/</guid>
+      <description>I come across a lot of material to learn about computers, porgramming, software etc. on the Internet. Sadly more than I could possibly read&amp;hellip; However I think learning and teaching are integral parts of being a hacker in the classical way. On this page I want to share articles, books, videos, wikis and talks that helped me or were interesting in some way to me and are of no cost.</description>
+    </item>
     
     <item>
       <title>links</title>
