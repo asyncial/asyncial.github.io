@@ -36,7 +36,7 @@
       <pubDate>Wed, 26 Jul 2017 15:03:00 +0200</pubDate>
       
       <guid>https://asyncial.github.io/blog/the-status-of-the-qt-desktop/</guid>
-      <description>In the last few years, Qt-based desktop environments became more and more popular. There are quite a lot of them now. Of course we have the old, trusty KDE, now in version 5.10, as &amp;ldquo;flagship&amp;rdquo; of the Qt crew, but there are more. LXQt as the lightweight choice, which is a fusion between LXDE and Razor-Qt, the highly experimental Liri, trying to implement a very modern looking desktop, very similar to Google&amp;rsquo;s Material Design, the &amp;hellip; different DE, called theShell, of course Lumina mainly targeted at *BSD, but of course portable enough, to run on Linux too, and Budgie is going to be Qt-based in the future as well!</description>
+      <description>In the last few years, Qt-based desktop environments became more and more popular. There are quite a lot of them now. Of course, we have the old, trusty KDE, now in version 5.10, as &amp;ldquo;flagship&amp;rdquo; of the Qt crew, but there are more. LXQt as the lightweight choice, which is a fusion between LXDE and Razor-Qt, the highly experimental Liri, trying to implement a very modern looking desktop, very similar to Google&amp;rsquo;s Material Design, the &amp;hellip; different DE, called theShell, of course Lumina mainly targeted at *BSD, but of course portable enough, to run on Linux too, and Budgie is going to be Qt-based in the future as well!</description>
     </item>
     
     <item>
@@ -45,7 +45,7 @@
       <pubDate>Wed, 01 Feb 2017 18:52:47 +0200</pubDate>
       
       <guid>https://asyncial.github.io/blog/organize-your-.xresources-like-a-pro/</guid>
-      <description>If you are anything like me, you like to customize your terminal colorscheme. And if you are even more like me, you are using urxvt and need to edit your ~/.Xresources to changes your terminals colors. So I assume your .Xresources are mess an you want to know, how to get them clean and easy to read and customize. If you already have a working system, there is no need to change it.</description>
+      <description>If you are anything like me, you like to customize your terminal colorscheme. And if you are even more like me, you are using urxvt and need to edit your ~/.Xresources to changes your terminals colors. So I assume your .Xresources are mess and you want to know, how to get them clean and easy to read and customize. If you already have a working system, there is no need to change it.</description>
     </item>
     
     <item>
@@ -54,7 +54,7 @@
       <pubDate>Fri, 19 Aug 2016 18:50:00 +0200</pubDate>
       
       <guid>https://asyncial.github.io/blog/10-more-distros/</guid>
-      <description>I’ve looked at ten more Linux distros! Again, I have the urge to share my experiences with the ca. 15 different visitors my blog already had, because I guess, they are very interested in my texts here. Or they are not. I only know one of them, and I didn’t ask him. However here is the list of the distros:
+      <description>I’ve looked at ten more Linux distros! Again, I have the urge to share my experiences with the ca. 15 different visitors my blog already had, because I guess, they are very interested in my texts here. Or they are not. I only know one of them, and I didn’t ask him. However, here is the list of the distros:
  Alpine Linux 3.4.3 Chakra Linux 2016.02 Ian Linux Mint Debian Edition 2 NixOS 16.</description>
     </item>
     
@@ -64,7 +64,7 @@
       <pubDate>Fri, 12 Aug 2016 18:47:02 +0200</pubDate>
       
       <guid>https://asyncial.github.io/blog/casual-distroreviews/</guid>
-      <description>In the last few weeks, I took a look at 17 different Linux distributions. Why? Because I had nothing else to do and thought it was interesting to see, how the different systems feel. For the first round of this, I looked more at out-of-the-box, beginner-frienly-ish distros, because I’m lazy. I don’t want to say something about any of these distribution, but only about those, which were interesting or special in some way.</description>
+      <description>In the last few weeks, I took a look at 17 different Linux distributions. Why? Because I had nothing else to do and thought it was interesting to see, how the different systems feel. For the first round of this, I looked more at out-of-the-box, beginner-friendly-ish distros, because I’m lazy. I don’t want to say something about all of these distributions, but only about those, which were interesting or special in some way.</description>
     </item>
     
     <item>
@@ -73,8 +73,8 @@
       <pubDate>Sun, 10 Apr 2016 18:23:33 +0200</pubDate>
       
       <guid>https://asyncial.github.io/blog/how-to-debrand-your-xperia-z3/</guid>
-      <description>When I got myself a new Z3 the other day, it had a T-Mobile software branding. I think, you know, what that means: stupid bloatware and less chance to get updates. So I decided to get rid of it. That’s how you do it:
- Do a back up of your data! Get and install the Sony PC Companion, if you don’t already did. Get and install Flashtool. I recommend to use the torrent link, because the download server was quite slow, when I tried it.</description>
+      <description>When I got myself a new Z3 the other day, it had a T-Mobile software branding. I think, you know what that means: stupid bloatware and less chance to get updates. So I decided to get rid of it. That’s how you do it:
+ Do a back up of your data! Get and install the Sony PC Companion, if you don’t already did. Get and install Flashtool. I recommend using the torrent link, because the download server was quite slow, when I tried it.</description>
     </item>
     
   </channel>

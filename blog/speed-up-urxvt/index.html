@@ -59,11 +59,11 @@
 
 
     
-    <link rel="stylesheet" href="https://asyncial.github.io/css/reset.css?t=2018-07-15%2001%3a23%3a54.245775969%20%2b0200%20CEST%20m%3d%2b0.089352480">
-    <link rel="stylesheet" href="https://asyncial.github.io/css/pygments.css?t=2018-07-15%2001%3a23%3a54.245775969%20%2b0200%20CEST%20m%3d%2b0.089352480">
-    <link rel="stylesheet" href="https://asyncial.github.io/css/main.css?t=2018-07-15%2001%3a23%3a54.245775969%20%2b0200%20CEST%20m%3d%2b0.089352480">
+    <link rel="stylesheet" href="https://asyncial.github.io/css/reset.css?t=2018-07-23%2001%3a17%3a55.418349242%20%2b0200%20CEST%20m%3d%2b0.155324079">
+    <link rel="stylesheet" href="https://asyncial.github.io/css/pygments.css?t=2018-07-23%2001%3a17%3a55.418349242%20%2b0200%20CEST%20m%3d%2b0.155324079">
+    <link rel="stylesheet" href="https://asyncial.github.io/css/main.css?t=2018-07-23%2001%3a17%3a55.418349242%20%2b0200%20CEST%20m%3d%2b0.155324079">
     
-        <link rel="stylesheet" href="https://asyncial.github.io/css/override.css?t=2018-07-15%2001%3a23%3a54.245775969%20%2b0200%20CEST%20m%3d%2b0.089352480">
+        <link rel="stylesheet" href="https://asyncial.github.io/css/override.css?t=2018-07-23%2001%3a17%3a55.418349242%20%2b0200%20CEST%20m%3d%2b0.155324079">
     
 
 
@@ -172,7 +172,7 @@
             <div class="markdown">
                 
 
-<p>This blog post documents really quick, how you can get <a href="[http://software.schmorp.de/pkg/rxvt-unicode.html">URxvt</a> to be ready in less time. I measured the time, my computer needed, to start instances of URxvt to a usable shell and close it again for 25 times. I tried that with <a href="https://tiswww.case.edu/php/chet/bash/bashtop.html">bash</a>, <a href="https://www.in-ulm.de/~mascheck/various/ash/⎈">dash</a> and <a href="http://www.zsh.org/">zsh</a> with and without <a href="http://ohmyz.sh/">oh-my-zsh</a>. It measured it with <a href="http://man7.org/linux/man-pages/man1/time.1.html">time(1)</a>. My test script looks like this:</p>
+<p>This blog post documents really quick, how you can get <a href="http://software.schmorp.de/pkg/rxvt-unicode.html">URxvt</a> to be ready in less time. I measured the time, my computer needed, to start instances of URxvt to a usable shell and close it again for 25 times. I tried that with <a href="https://tiswww.case.edu/php/chet/bash/bashtop.html">bash</a>, <a href="https://www.in-ulm.de/~mascheck/various/ash/⎈">dash</a> and <a href="http://www.zsh.org/">zsh</a> with and without <a href="http://ohmyz.sh/">oh-my-zsh</a>. It measured it with <a href="http://man7.org/linux/man-pages/man1/time.1.html">time(1)</a>. My test script looks like this:</p>
 
 <pre><code>#! /bin/sh
 
@@ -182,19 +182,19 @@ done
 </code></pre>
 
 <p>Of course, &lsquo;dash&rsquo; needs to be replaced with the shell, you want to use. It&rsquo;s not and a beautiful script, and I think, I will redo it sometime, making it more flexible.
-The configs for all shells just consisted of <code>exit</code>, so they close immedietly after they&rsquo;re ready. The exception to this is my <a href="https://github.com/asyncial/dotfiles-maschine/blob/master/zsh/.zshrc">oh-my-zsh-config</a>, which is the one, I use at the moment, but with an <code>exit</code> appended in the last line.
-The machine I used is MASCHINE, my notebook, look at it&rsquo;s specs in my <a href="https://asyncial.github.io/about/">about</a> page.</p>
+The configs for all shells just consisted of <code>exit</code>, so they close immedietly after they&rsquo;re ready, with the exception of my <a href="https://github.com/asyncial/dotfiles-maschine/blob/master/zsh/.zshrc">oh-my-zsh-config</a>, which is the one, I use at the moment, but with an <code>exit</code> appended in the last line.
+I used MASCHINE, my notebook, as platform for the tests. Look at its specs in my <a href="https://asyncial.github.io/about/">about</a> page.</p>
 
 <h3 id="what-to-do">What to do</h3>
 
-<p>So, how do we get the start up faster? Throw out stuff we don&rsquo;t need. For example the Perl support. I don&rsquo;t use any extensions or scripts, so I can safely just disable it. The great thing is, URxvt let&rsquo;s you do this, without having you recompile it by hand. You can just append the following setting to your <code>~/.Xresources</code>:</p>
+<p>So, how do we get the start up faster? Throw out stuff we don&rsquo;t need. For example the Perl support. I don&rsquo;t use any extensions or scripts, so I can safely disable it. The great thing is, URxvt lets you do this, without having you recompile it by hand. You can just append the following setting to your <code>~/.Xresources</code>:</p>
 
 <pre><code>! DISABLE PERL FOR BETTER PERFORMANCE AND SECURITY !
 URxvt.perl-ext:
 URxvt.perl-ext-common:
 </code></pre>
 
-<p>This disables the startup of the built-in perl interpreter. But can we get it even faster? Of course. URxvt comes with an optional client-server model. So, if we run the <code>urxvtd</code> daemon at boot time, we can start it&rsquo;s client <code>urxvtc</code> with insane time improvements. Just add this to your systems autostart file:</p>
+<p>This disables the startup of the built-in perl interpreter. But can we get it even faster? Of course. URxvt comes with an optional client-server model. So, if we run the <code>urxvtd</code> daemon at boot time, we can start its client <code>urxvtc</code> with insane time improvements. Just add this to your systems autostart file:</p>
 
 <pre><code>urxvtd -q -o -f &amp;
 </code></pre>
