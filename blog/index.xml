@@ -40,11 +40,11 @@
     </item>
     
     <item>
-      <title>organize your .xresources like a pro</title>
-      <link>https://asyncial.github.io/blog/organize-your-.xresources-like-a-pro/</link>
+      <title>organize your .xresources</title>
+      <link>https://asyncial.github.io/blog/organize-your-.xresources/</link>
       <pubDate>Wed, 01 Feb 2017 18:52:47 +0200</pubDate>
       
-      <guid>https://asyncial.github.io/blog/organize-your-.xresources-like-a-pro/</guid>
+      <guid>https://asyncial.github.io/blog/organize-your-.xresources/</guid>
       <description>If you are anything like me, you like to customize your terminal colorscheme. And if you are even more like me, you are using urxvt and need to edit your ~/.Xresources to changes your terminals colors. So I assume your .Xresources are mess and you want to know, how to get them clean and easy to read and customize. If you already have a working system, there is no need to change it.</description>
     </item>
     
