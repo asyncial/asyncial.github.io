@@ -17,8 +17,8 @@
  Alpine Linux 3.4.3 Chakra Linux 2016.02 Ian Linux Mint Debian Edition 2 NixOS 16." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://asyncial.github.io/blog/10-more-distros/" />
-<meta property="article:published_time" content="2016-08-19T18:50:00&#43;02:00"/>
-<meta property="article:modified_time" content="2016-08-19T18:50:00&#43;02:00"/>
+<meta property="article:published_time" content="2016-08-19T18:50:00+02:00" />
+<meta property="article:modified_time" content="2016-08-19T18:50:00+02:00" />
 
 
 <title>
@@ -45,11 +45,11 @@
 
 
     
-    <link rel="stylesheet" href="https://asyncial.github.io/css/reset.css?t=2019-06-30%2001%3a38%3a56.679425433%20%2b0200%20CEST%20m%3d%2b0.164202144">
-    <link rel="stylesheet" href="https://asyncial.github.io/css/pygments.css?t=2019-06-30%2001%3a38%3a56.679425433%20%2b0200%20CEST%20m%3d%2b0.164202144">
-    <link rel="stylesheet" href="https://asyncial.github.io/css/main.css?t=2019-06-30%2001%3a38%3a56.679425433%20%2b0200%20CEST%20m%3d%2b0.164202144">
+    <link rel="stylesheet" href="https://asyncial.github.io/css/reset.css?t=2020-06-30%2015%3a32%3a35.182823386%20%2b0200%20CEST%20m%3d%2b0.125089795">
+    <link rel="stylesheet" href="https://asyncial.github.io/css/pygments.css?t=2020-06-30%2015%3a32%3a35.182823386%20%2b0200%20CEST%20m%3d%2b0.125089795">
+    <link rel="stylesheet" href="https://asyncial.github.io/css/main.css?t=2020-06-30%2015%3a32%3a35.182823386%20%2b0200%20CEST%20m%3d%2b0.125089795">
     
-        <link rel="stylesheet" href="https://asyncial.github.io/css/override.css?t=2019-06-30%2001%3a38%3a56.679425433%20%2b0200%20CEST%20m%3d%2b0.164202144">
+        <link rel="stylesheet" href="https://asyncial.github.io/css/override.css?t=2020-06-30%2015%3a32%3a35.182823386%20%2b0200%20CEST%20m%3d%2b0.125089795">
     
 
 
@@ -158,10 +158,7 @@
                 </div>
             </div>
             <div class="markdown">
-                
-
-<p>I’ve looked at ten more Linux distros! Again, I have the urge to share my experiences with the ca. 15 different visitors my blog already had, because I guess, they are very interested in my texts here. Or they are not. I only know one of them, and I didn’t ask him. However, here is the list of the distros:</p>
-
+                <p>I’ve looked at ten more Linux distros! Again, I have the urge to share my experiences with the ca. 15 different visitors my blog already had, because I guess, they are very interested in my texts here. Or they are not. I only know one of them, and I didn’t ask him. However, here is the list of the distros:</p>
 <ul>
 <li><a href="http://alpinelinux.org/">Alpine Linux 3.4.3</a></li>
 <li><a href="https://chakralinux.org/">Chakra Linux 2016.02 Ian</a></li>
@@ -174,31 +171,18 @@
 <li><a href="http://www.slitaz.org/en/">SliTaz 5.0 rolling</a></li>
 <li><a href="http://www.voidlinux.eu/">Void Linux</a></li>
 </ul>
-
 <p>As you can see, I chose more minimal and advanced distros than the last time. I would like to say something about each system, because they all were interesting and had interesting concepts, but I’m too lazy to write that much. I apologize beforehand, if things get a bit technical this time, but I will try to explain as easy as I can.</p>
-
 <h2 id="alpine-linux">Alpine Linux</h2>
-
 <p>This might be the most interesting, most impressing distro, I’ve tested so far. It is aimed at experienced users and has a focus on security, simplicity and small size. The project achieves its goal with some interesting design and software choices. Like Arch Linux they just ship a minimal base system on installation, but even more minimal than Arch&rsquo;s. Instead of using the <a href="https://www.gnu.org/software/bash/">bash</a> as standard shell, they decided to use the more lightweight ash. Instead of the big and bloated <a href="https://www.gnu.org/software/coreutils/coreutils.html">GNU coreutils</a>, which provide the basic file and text manipulation tools like <code>cat</code>, they ship the extremely light <a href="https://busybox.net/">busybox</a>. They also use OpenRC as init instead of the controversial systemd and chose the security hardened and light <a href="https://www.musl-libc.org/">musl-libc</a> insted of the common glibc. This leads to smaller executables and a more secure system. The kernel is patched with the <a href="https://grsecurity.net/">grsecurity</a> patchset. It also uses it’s very own package manager, called <code>apk</code>.</p>
-
 <p>So how are these choices getting together? Awesome. I had to relearn a few things dealing with busybox, OpenRC and the ash, but I liked, how fast and simple the system was. It also had a quite big package base for a project this size, and building your own packages for it is quite easy, too. It is definitely not for a first-time-linux-user. But I was impressed, how well the system works. I’m now using it to run a samba-server on my Raspberry Pi and it uses less than 100 MiB disk space and about 35 MiB RAM. Just impressive.</p>
-
 <h2 id="nixos">NixOS</h2>
-
 <p>Another distro, that is unlike others. NixOS is built around the Nix Package-Manager, and is configured through a declarative language in a single or modularized config file. You can even boot different configs just by creating different config files, which is quite awesome. The approach works quite well and if you run into difficulties, you can always look at the solid documentation online. The packages are recent enough and there are many of them.</p>
-
 <p>I like the approach, it is well deployed and I think, if you invest enough time, it becomes extremely powerful, especially, when you are creating config files for different workloads, like gaming on a minimal window manager, so no ressources get wasted, developing on something tiling and office work on a full DE, that gets out of the way. Each with their own sets of services and so on. The downside is, you have to relearn nearly everything, you know about configuring your linux system.</p>
-
 <h2 id="porteus">Porteus</h2>
-
 <p>Porteus is a live-system, based on slackware and its most recent version is quite old, but the new one should be released soon. Regardless the problems with not supported hardware because of the old kernel and other age invoked problems, the system was quite cool. Before you download, you choose which browser you want, which desktop environment, which word processor and so on and will then be downloading an already reasonably well configured system. Once running, you can save your settings, document etc. on the pendrive, on which Porteus is installed. It also gives helps you to set up fundamental stuff. Sadly, the package manager was not able to update its databases for some reason. I will definitely check out the next version, because I love the idea to preconfigure your live-system online.</p>
-
 <h2 id="slitaz">SliTaz</h2>
-
 <p>The last distribution I will talk about is an independent, minimal and rolling release live distribution. The system is also using busybox, like Alpine Linux, but it ships with a graphical interface, based on OpenBox and parts of LXDE. Their package managment, called TazPkg, is quite cool and has an impressingly large package base. The whole system run at 68 MB, running a fully featured OS with a nice GUI. Impressive. It was just a pleasure to use it and it was fun to explore, how the developers made it possible to make the system that light. This was definitely not the last time I’ve been using SliTaz.</p>
-
-<hr />
-
+<hr>
 <p>So, next time there finally will be other operating systems than Linux. So stay in touch!</p>
 
                 <br>

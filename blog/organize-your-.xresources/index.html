@@ -15,8 +15,8 @@
 <meta property="og:description" content="If you are anything like me, you like to customize your terminal colorscheme. And if you are even more like me, you are using urxvt and need to edit your ~/.Xresources to changes your terminals colors. So I assume your .Xresources are mess and you want to know, how to get them clean and easy to read and customize. If you already have a working system, there is no need to change it." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://asyncial.github.io/blog/organize-your-.xresources/" />
-<meta property="article:published_time" content="2017-02-01T18:52:47&#43;02:00"/>
-<meta property="article:modified_time" content="2017-02-01T18:52:47&#43;02:00"/>
+<meta property="article:published_time" content="2017-02-01T18:52:47+02:00" />
+<meta property="article:modified_time" content="2017-02-01T18:52:47+02:00" />
 
 
 <title>
@@ -43,11 +43,11 @@
 
 
     
-    <link rel="stylesheet" href="https://asyncial.github.io/css/reset.css?t=2019-06-30%2001%3a38%3a56.677854459%20%2b0200%20CEST%20m%3d%2b0.162631205">
-    <link rel="stylesheet" href="https://asyncial.github.io/css/pygments.css?t=2019-06-30%2001%3a38%3a56.677854459%20%2b0200%20CEST%20m%3d%2b0.162631205">
-    <link rel="stylesheet" href="https://asyncial.github.io/css/main.css?t=2019-06-30%2001%3a38%3a56.677854459%20%2b0200%20CEST%20m%3d%2b0.162631205">
+    <link rel="stylesheet" href="https://asyncial.github.io/css/reset.css?t=2020-06-30%2015%3a32%3a35.188148118%20%2b0200%20CEST%20m%3d%2b0.130414554">
+    <link rel="stylesheet" href="https://asyncial.github.io/css/pygments.css?t=2020-06-30%2015%3a32%3a35.188148118%20%2b0200%20CEST%20m%3d%2b0.130414554">
+    <link rel="stylesheet" href="https://asyncial.github.io/css/main.css?t=2020-06-30%2015%3a32%3a35.188148118%20%2b0200%20CEST%20m%3d%2b0.130414554">
     
-        <link rel="stylesheet" href="https://asyncial.github.io/css/override.css?t=2019-06-30%2001%3a38%3a56.677854459%20%2b0200%20CEST%20m%3d%2b0.162631205">
+        <link rel="stylesheet" href="https://asyncial.github.io/css/override.css?t=2020-06-30%2015%3a32%3a35.188148118%20%2b0200%20CEST%20m%3d%2b0.130414554">
     
 
 
@@ -157,12 +157,9 @@
             </div>
             <div class="markdown">
                 <p>If you are anything like me, you like to customize your terminal colorscheme. And if you are even more like me, you are using urxvt and need to edit your ~/.Xresources to changes your terminals colors. So I assume your .Xresources are mess and you want to know, how to get them clean and easy to read and customize. If you already have a working system, there is no need to change it. But maybe you can use some of my ideas. So what do my .Xresources look like?</p>
-
 <pre><code>      $ cat ~/.Xresources
 </code></pre>
-
-<hr />
-
+<hr>
 <pre><code>      !!  @@@  @@@  @@@@@@@   @@@@@@@@   @@@@@@    @@@@@@   
       !!  @@@  @@@  @@@@@@@@  @@@@@@@@  @@@@@@@   @@@@@@@@  
       !!  @@!  !@@  @@!  @@@  @@!       !@@       @@!  @@@ 
@@ -181,14 +178,10 @@
       #include &quot;/home/tillm/.xres/urxvt&quot;
       #include &quot;/home/tillm/.xres/rofi&quot;
 </code></pre>
-
 <p>So let’s examine this. ‘!’ initiates a comment. Comments are neat. They help you understand, what you were doing. Any nice config file needs a fancy header. Well, not really, but I like it. Going to the interesting parts: The first interesting statement is this line: #include “/home/tillm/.xres/themes/cyberpunk_mtlx” It tells the interpreter to look in ~/.xres/themes/cyberpunk_mtlx for more instructions. So, to change your scheme, you just create a new file with the colors and change a few characters in this line. It also makes it very easy to change the colors back. Nice, so, how do these theme files look?</p>
-
 <pre><code>      $ cat ~/.xres/themes/cyberpunk_mtlx
 </code></pre>
-
-<hr />
-
+<hr>
 <pre><code>      ! cyberpunk !
       #define c00 #181818
       #define c10 #282828
@@ -224,14 +217,10 @@
       *.color14:      c14
       *.color15:      c15
 </code></pre>
-
 <p>You see, I have defined each color as a variable. This way one can use them in other contexts too. As you can see, I have created more files for the applications I use, that are configured through .Xresources. Let’s look at the .xres/urxvt as an example.</p>
-
 <pre><code>      $ cat ~/.xres/urxvt
 </code></pre>
-
-<hr />
-
+<hr>
 <pre><code>      !!  @@@  @@@  @@@@@@@   @@@  @@@  @@@  @@@  @@@@@@@  
       !!  @@@  @@@  @@@@@@@@  @@@  @@@  @@@  @@@  @@@@@@@  
       !!  @@!  @@@  @@!  @@@  @@!  !@@  @@!  @@@    @@!    
@@ -253,20 +242,15 @@
       URxvt.foreground: #bcbcbc
       URxvt.cursorColor: c14
 </code></pre>
-
 <p>As you can see, I used the variable ‘c14’ I declared before, to set the value of URxvt.cursorColor. Similar stuff can be seen in the config file for rofi.</p>
-
-<hr />
-
+<hr>
 <p>So what are the upsides of organizing your .Xresources this way?</p>
-
 <ol>
 <li>Changing your terminal colorscheme is very convinient.</li>
 <li>You can easily reuse the colors declared in your theme for the configuration of other tools and other properties.</li>
 <li>You can find the options you want to change faster, because you have separate files for different application. This way, you don’t have to look through just one long file.</li>
 <li>You have fancy headers on your config files.</li>
 </ol>
-
 <p>You’re welcome! ;)</p>
 
                 <br>

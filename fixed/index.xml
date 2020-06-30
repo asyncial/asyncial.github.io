@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fixed on asyncial</title>
@@ -6,19 +6,10 @@
     <description>Recent content in Fixed on asyncial</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 24 Apr 2018 00:48:18 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 03 May 2017 01:42:20 +0200</lastBuildDate>
     
 	<atom:link href="https://asyncial.github.io/fixed/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Learning</title>
-      <link>https://asyncial.github.io/learning/</link>
-      <pubDate>Tue, 24 Apr 2018 00:48:18 +0200</pubDate>
-      
-      <guid>https://asyncial.github.io/learning/</guid>
-      <description>I come across a lot of material to learn about computers, porgramming, software etc. on the Internet. Sadly more than I could possibly read&amp;hellip; However, I think learning and teaching are integral parts of being a hacker in the traditional way. On this page I want to share articles, books, videos, wikis and talks that helped me or were interesting to me in some way, and are of no cost.</description>
-    </item>
     
     <item>
       <title>links</title>
@@ -26,18 +17,8 @@
       <pubDate>Wed, 03 May 2017 01:42:20 +0200</pubDate>
       
       <guid>https://asyncial.github.io/links/</guid>
-      <description> There are a few sites, I want to recommend.
-Interesting Open-Source Projects  Alpine Linux Adélie Linux Krita Postmarket OS Redox OS  Interesting Websites  nixers installGentoo wiki DistroWatch DistroChooser TextEditors wiki  </description>
-    </item>
-    
-    <item>
-      <title>about</title>
-      <link>https://asyncial.github.io/about/</link>
-      <pubDate>Fri, 21 Apr 2017 18:57:12 +0200</pubDate>
-      
-      <guid>https://asyncial.github.io/about/</guid>
-      <description>This blog documents my adventures in technology. At the moment my primary interest lies is linux/unix systems, their usage, their customization, their history and philosophy. But I am interested in other fields too, such as hardware, OS in general, gaming and more. I hope you are going to enjoy this blog.
-whoami I am a computer science student. I like (in no particular order) *NIX, minimalist software, the GPL, AMD, Sony, Deus Ex, Risen, XCOM and Civilization, i3-gaps, the Raspberry Pi and more, which I don’t recall at the moment.</description>
+      <description>There are a few sites, I want to recommend.
+Interesting Open-Source Projects  Alpine Linux Adélie Linux Krita Postmarket OS Redox OS  Interesting Websites  nixers installGentoo wiki DistroWatch DistroChooser TextEditors wiki cat-v document archive  </description>
     </item>
     
   </channel>

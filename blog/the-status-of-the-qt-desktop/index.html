@@ -15,8 +15,8 @@
 <meta property="og:description" content="In the last few years, Qt-based desktop environments became more and more popular. There are quite a lot of them now. Of course, we have the old, trusty KDE, now in version 5.10, as &ldquo;flagship&rdquo; of the Qt crew, but there are more. LXQt as the lightweight choice, which is a fusion between LXDE and Razor-Qt, the highly experimental Liri, trying to implement a very modern looking desktop, very similar to Google&rsquo;s Material Design, the &hellip; different DE, called theShell, of course Lumina mainly targeted at *BSD, but of course portable enough, to run on Linux too, and Budgie is going to be Qt-based in the future as well!" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://asyncial.github.io/blog/the-status-of-the-qt-desktop/" />
-<meta property="article:published_time" content="2017-07-26T15:03:00&#43;02:00"/>
-<meta property="article:modified_time" content="2017-07-26T15:03:00&#43;02:00"/>
+<meta property="article:published_time" content="2017-07-26T15:03:00+02:00" />
+<meta property="article:modified_time" content="2017-07-26T15:03:00+02:00" />
 
 
 <title>
@@ -43,11 +43,11 @@
 
 
     
-    <link rel="stylesheet" href="https://asyncial.github.io/css/reset.css?t=2019-06-30%2001%3a38%3a56.675992665%20%2b0200%20CEST%20m%3d%2b0.160769390">
-    <link rel="stylesheet" href="https://asyncial.github.io/css/pygments.css?t=2019-06-30%2001%3a38%3a56.675992665%20%2b0200%20CEST%20m%3d%2b0.160769390">
-    <link rel="stylesheet" href="https://asyncial.github.io/css/main.css?t=2019-06-30%2001%3a38%3a56.675992665%20%2b0200%20CEST%20m%3d%2b0.160769390">
+    <link rel="stylesheet" href="https://asyncial.github.io/css/reset.css?t=2020-06-30%2015%3a32%3a35.195826803%20%2b0200%20CEST%20m%3d%2b0.138093172">
+    <link rel="stylesheet" href="https://asyncial.github.io/css/pygments.css?t=2020-06-30%2015%3a32%3a35.195826803%20%2b0200%20CEST%20m%3d%2b0.138093172">
+    <link rel="stylesheet" href="https://asyncial.github.io/css/main.css?t=2020-06-30%2015%3a32%3a35.195826803%20%2b0200%20CEST%20m%3d%2b0.138093172">
     
-        <link rel="stylesheet" href="https://asyncial.github.io/css/override.css?t=2019-06-30%2001%3a38%3a56.675992665%20%2b0200%20CEST%20m%3d%2b0.160769390">
+        <link rel="stylesheet" href="https://asyncial.github.io/css/override.css?t=2020-06-30%2015%3a32%3a35.195826803%20%2b0200%20CEST%20m%3d%2b0.138093172">
     
 
 
@@ -156,111 +156,58 @@
                 </div>
             </div>
             <div class="markdown">
-                
-
-<p>In the last few years, Qt-based desktop environments became more and more popular. There are quite a lot of them now. Of course, we have the old, trusty <a href="https://www.kde.org/plasma-desktop">KDE</a>, now in version 5.10, as &ldquo;flagship&rdquo; of the Qt crew, but there are more. <a href="http://lxqt.org/">LXQt</a> as the lightweight choice, which is a fusion between <a href="http://lxde.org/">LXDE</a> and <a href="https://github.com/Razor-qt/razor-qt">Razor-Qt</a>, the highly experimental <a href="https://liri.io/">Liri</a>, trying to implement a very modern looking desktop, very similar to Google&rsquo;s Material Design, the &hellip; different DE, called <a href="https://vicr123.github.io/theshell/#">theShell</a>, of course <a href="https://lumina-desktop.org/">Lumina</a> mainly targeted at *BSD, but of course portable enough, to run on Linux too, and <a href="https://budgie-desktop.org/2017/01/25/kicking-off-budgie-11/">Budgie</a> is going to be Qt-based in the future as well!</p>
-
+                <p>In the last few years, Qt-based desktop environments became more and more popular. There are quite a lot of them now. Of course, we have the old, trusty <a href="https://www.kde.org/plasma-desktop">KDE</a>, now in version 5.10, as &ldquo;flagship&rdquo; of the Qt crew, but there are more. <a href="http://lxqt.org/">LXQt</a> as the lightweight choice, which is a fusion between <a href="http://lxde.org/">LXDE</a> and <a href="https://github.com/Razor-qt/razor-qt">Razor-Qt</a>, the highly experimental <a href="https://liri.io/">Liri</a>, trying to implement a very modern looking desktop, very similar to Google&rsquo;s Material Design, the &hellip; different DE, called <a href="https://vicr123.github.io/theshell/#">theShell</a>, of course <a href="https://lumina-desktop.org/">Lumina</a> mainly targeted at *BSD, but of course portable enough, to run on Linux too, and <a href="https://budgie-desktop.org/2017/01/25/kicking-off-budgie-11/">Budgie</a> is going to be Qt-based in the future as well!</p>
 <p>One can clearly see, the Qt people landed a hit with their version 5. But it ist possible to run a system with Qt as the only graphics toolkit?</p>
-
 <p>Short answer is: yes, and some distributions do this already. But there are problems, some quite severe. Let me show you!</p>
-
 <h2 id="make-your-desktop-look-qt">Make your Desktop look Qt.</h2>
-
 <p>What do we need for a working desktop, so we can work, have us entertained, learn, communicate and aimlessly look at web pages? The first thing you would need to deicde on, is the desktop environment.</p>
-
 <h3 id="desktop-environment">Desktop Environment</h3>
-
 <p>I already talked about the variety of Desktop Environments. For this experiment, I used KDE Plasma 5.10, because I think, it is the most advance and established one out of that list. But don&rsquo;t worry, I try to find tools without KDE dependencies, so you can use them with any of the DEs I listed, without pulling in a lot of dependencies.</p>
-
 <p>The Plasma Desktop is the flagship of the Qt-based DEs. It has endless features and possible configurations and a lot of great applications are developed under its umbrella. Its UI is extremely costumizable, but it ships with a sane default. The customizability is in part achieved via so called &ldquo;plasmoids&rdquo;. These are mini applications that can work as widgets on the desktop or as a button in your control bar. The control bar is one of the best, I&rsquo;ve ever seen. You can choose different types of application menus (or none at all), can vary its height and length, add any plasmoid you wish and so much more. The other parts of the plasma desktop also allow pretty fine-grained control, again with sane defaults. Another nice feature is the integration of android phones via KDE connect, but it doesn&rsquo;t work for me, because of my weird router setup&hellip;
 As you might have noticed, I&rsquo;m pretty excited about KDE, it is just as feature-rich, as it gets. I really like it.</p>
-
 <p>So what do else do we need? I established a few categories and went on to find matching software.</p>
-
 <h3 id="work">Work</h3>
-
 <h4 id="documents-spreadsheets-presentation">Documents, Spreadsheets, Presentation&hellip;</h4>
-
 <p>So what do we use as our office suite? This is actually already the first weak point of our experiment. There is calligra, which is actually pretty capable of handling your everyday needs (but not very much more), but it depends heavily on the KDE framework. That said, if you are okay with that, it works nice, as far as I experienced it so far. It is not LibreOffice in terms of functionality, but it is definitely worth a try. But what if we don&rsquo;t want that huge pile of dependencies? You would need to dig pretty deep. You could write <a href="https://daringfireball.net/projects/markdown/">markdown</a> with any of the text editors below, but that gets old pretty quick. If you are smarter than me, and know how to write LaTeX, there is an IDE for that, called <a href="http://texstudio.sourceforge.net/">TeXstudio</a>. Speaking of LaTeX, there is also <a href="http://www.lyx.org/">LyX</a>, which let&rsquo;s you use a traditional word processor interface to help you create LaTeX documents for stupid people like me. It&rsquo;s the thing that comes the closest to your average word processor, if you restrict yourself to just Qt. So we have a word processor. What about spreadsheets and presentation? Besides calligra, I&rsquo;m afraid there isn&rsquo;t anything. You could use web based applications though.</p>
-
 <p>So long story short: When we look at office suites, the Qt world is quite lacking. You can stick to <strong>LyX</strong>, then you can&rsquo;t edit spreadsheets or create presentations. You can use <strong>calligra</strong>, but then you have a lot of KDE dependencies. Or you make an exception for <strong>LibreOffice</strong> like I do it&hellip;</p>
-
 <h4 id="text-editors">Text Editors</h4>
-
 <p>The situation of text editors is much better. I use <a href="https://neovim.io/">neovim</a> myself, which offers <a href="https://github.com/equalsraf/neovim-qt">nice Qt GUI</a>. Basically, you can use any CLI text editor for obvious reasons. So what about GUI text editors? The most famous ones (Sublime, any electron based one) are out. What else do we have? If you are comfortable with KDE dependencies, there are <a href="https://www.kde.org/applications/utilities/kwrite/">KWrite</a> and <a href="https://kate-editor.org/">Kate</a>, which are both quite nice and clean. Of course there are other, non-KDE editors. The best of those is in my opinion <a href="http://notepadqq.altervista.org/s/">notepadqq</a>, which is a Qt5 clone of Notepad++, the popular Windows text editor. And similar to it, notepadqq is lightweight and straightforward to use. I really like it.</p>
-
 <p>Result: <strong>Notepadqq</strong> is the most obvious choice, but <strong>Neovim-qt</strong>, and the KDE solutions are nice too.</p>
-
 <h4 id="terminal">Terminal</h4>
-
 <p>You have basically just one choice here, and that is <a href="https://github.com/lxde/qterminal">QTerminal</a>, but it is not a bad one. It does everything one would expect from a lightweight terminal emulator and a bit more. And that is actually more than I need from a terminal. A nice touch is the pull down mode, which enables you to call it everytime you need. If you count KDE applications, there is <a href="https://konsole.kde.org/">Konsole</a>, which I found to be a bit over the top with its vast of features. What I liked though, is <a href="https://konsole.kde.org/">Yakuake</a>, which is a pull down terminal, which looks pretty nice.</p>
-
 <p>Result: <strong>QTerminal</strong>, no discussion. <strong>Yakuake</strong> looks really good, though&hellip;</p>
-
 <h4 id="graphics">Graphics</h4>
-
 <p>If you just count pure Qt(5), this one is depressing. There just isn&rsquo;t anything. If you count KDE based apps, this one is extremely strong. That is because of <a href="https://krita.org/en/">krita</a> which might just be the best program for digital painting. But it also allows pretty good image manipulation and even the creation of animated scenes. It has a very active community and a yearly kickstarter to ensure the ongoing development. I think it will see a great future.</p>
-
 <h4 id="movie">Movie</h4>
-
 <p>If you have to edit videos or movies from time to time and need an easy solution, there is <a href="http://www.openshot.org/">OpenShot</a>. It is pretty solid, as far as I can see. If you need anything more professional, you would have to use KDE software again. <a href="https://kdenlive.org/">Kdenlive</a> is the tool of trade here. Sadly, I can&rsquo;t say too much about their quality, because I just don&rsquo;t need them a lot.</p>
-
 <h3 id="entertainment">Entertainment</h3>
-
 <h4 id="images">Images</h4>
-
 <p>There are a few image viewers using Qt around. I like <a href="http://nomacs.org/">nomacs</a> the most. It looks nice enough and has basic image editing capabilites. What would one need more?</p>
-
 <h4 id="video">Video</h4>
-
 <p>The situation for video players is really good on Qt. I normally just use <a href="https://mpv.io/">mpv</a>, which isn&rsquo;t Qt, but neither GTK. There are video players using Qt and libmpv though, so best of both worlds, I guess. The player I liked the most of these is <a href="http://bakamplayer.u8sand.net/">Baka MPlayer</a>, which features a pretty interface and nice configurability. But there is another one. <a href="https://bomi-player.github.io/">bomi</a> is built around a customized mpv fork. It is just as nice as Baka MPlayer and I can&rsquo;t give you an adequate recommendation. You can&rsquo;t do anything wrong here.</p>
-
 <h4 id="music">Music</h4>
-
 <p>With music, it&rsquo;s more difficult. After trying different options, I settled for <a href="https://www.tomahawk-player.org/">tomahawk</a>, which does its job, but is nothing too good. To be fair, I&rsquo;m really picky, when it comes to music players&hellip;</p>
-
 <h4 id="gaming">Gaming</h4>
-
 <p>Most games are built on SDL, so they don&rsquo;t need any other graphics toolkit. The real problem here is, that steam is not based on Qt. So no steam for us? As far as I can see, it doesn&rsquo;t depend on any other toolkit, so we might as well just use it. If you are more on the retro gaming side of things, most emulators provide different front ends, and a quite a few are based on Qt.</p>
-
 <h3 id="internet-and-communication">Internet and Communication</h3>
-
 <h4 id="browser">Browser</h4>
-
 <p>Ah, yes, the weakest link of the Qt ecosystem. Although it provides the blazingly fast qtwebengine, the programs using it are not what one would call a mature browser. The best I found are <a href="https://qupzilla.com/">Qupzilla</a> and <a href="https://qupzilla.com/">Otter Browser</a>. Qupzilla is actually really nice, and I am pretty impressed by it. But there is a problem: Extension support. While Qupzilla provides its own PlugIn API, it doesn&rsquo;t support Chromium or Firefox add-ons. That&rsquo;s a shame, because there are just some extensions, I don&rsquo;t want to give up. Especially https everywhere and reddit enhancement suite. That&rsquo;s acutally the only thing, that stopped me using it as a main browser. Otter on the other hand is a clone of Opera 12, but still unstable and experimental. But at least chrome extension support is on the &ldquo;after 1.0&rdquo; list. So maybe in the future, this could be a true replacement for the mainstream browsers.</p>
-
 <p>So yeah, what can you do? I can just say, try <strong>Qupzilla</strong>, it might just suit you. But beyond that, I guess you have to use your usual suspects, like <strong>Firefox</strong>. At least, there are firefox-kde-integration packages on a few distros.</p>
-
 <h4 id="mail">Mail</h4>
-
 <p>And the next weak point. You can use <a href="http://trojita.flaska.net/">Trojita</a>, which is good enough, but only if you just have one mail account. Then there is <a href="https://www.kde.org/applications/internet/kmail/">KMail</a>, which not only depends on the K framework, but also on the huge KDE PIM application stack. Both not really alternatives to what we know. So if you don&rsquo;t want to use Thunderbird or something similar, you have to use your webmail interfaces&hellip;</p>
-
 <h4 id="torrenting">Torrenting</h4>
-
 <p>Bittorrent tools are pretty important in the linux world, as you need them to load your gigabytes of distribution isos, you &ldquo;want to try some time&rdquo;, and then never do. So what is here for that? <a href="https://www.qbittorrent.org/">qBittorrent</a> has you covered, no further questions, your honour!</p>
-
 <h3 id="other">Other</h3>
-
 <h4 id="file-manager">File Manager</h4>
-
 <p>What about file managers? As far as I am concerned, there are two choices: Qt-only: <a href="https://www.qbittorrent.org/">PCManFM-qt</a>, the Qt port of the popular PCManFM. It does its job and is lightweight doing it. There is one problem: it doesn&rsquo;t support mounting with udisks, trash and remote filesystems without gvfs. Depending on your distribution, gvfs will pull gtk, so be cautious. If you are comfortable with KDE, there is <a href="https://userbase.kde.org/Dolphin">dolphin</a>, which is one of the best file managers on linux. I like it&rsquo;s design, and the most important settings are literally just one click away.</p>
-
 <h4 id="display-manager">Display Manager</h4>
-
 <p>Just one word: <a href="https://github.com/sddm/sddm">SDDM</a></p>
-
 <h4 id="calculator">Calculator</h4>
-
 <p>I just picked this category, because there is such a nice tool. It&rsquo;s called <a href="http://www.speedcrunch.org/">speedcrunch</a>, and it&rsquo;s awesome.</p>
-
 <h2 id="conclusion">Conclusion</h2>
-
 <p>As you can see, there actually is a lot to discover, if you restrict yourself. I think, if you don&rsquo;t set your rules too strict, you can have a nice consistent looking desktop with almost only Qt applications. It&rsquo;s a bit sad that, especially in the fields one often needs, there are only rather weak alternatives, especially for web browsing, mails and office.</p>
-
 <p>But overall this was fun and I think this is not the last time, I have done this experiment, maybe next year is &ldquo;the year of the Qt desktop&rdquo;.</p>
-
 <h4 id="bonus-distributions-with-a-special-qt-focus">Bonus: Distributions with a special Qt focus</h4>
-
 <ul>
 <li><a href="https://chakralinux.org/">Chakra Linux</a> - Pacman-based distro with plasma desktop. The gtk software is in extra repository, which can be easily deactivated. It is semi-rolling.</li>
 <li><a href="https://kaosx.us/">KaOS</a> - Another pacman-based distro with the plasma dekstop. Ships only a few gtk tools on a fresh install, but still provides it in their repositories. It is rolling release.</li>
@@ -272,9 +219,7 @@ As you might have noticed, I&rsquo;m pretty excited about KDE, it is just as fea
 <li><a href="https://liri.io/">Liri OS</a> - Arch-based distro, with its very own Qt DE, called liri.</li>
 <li><a href="https://www.trueos.org/">TrueOS</a> - Not a linux, but the home of the Lumina Desktop Environment. Based on FreeBSD.</li>
 </ul>
-
 <h4 id="additional-resources">Additional Resources</h4>
-
 <ul>
 <li><a href="https://wiki.manjaro.org/index.php?title=List_of_Qt_Applications">List of Qt Applications - Manjaro Wiki</a></li>
 <li><a href="https://wiki.gentoo.org/wiki/Qt_Desktop_applications">Qt Desktop Applications - Gentoo Wiki</a></li>

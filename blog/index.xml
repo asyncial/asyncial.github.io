@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on asyncial</title>
@@ -27,7 +27,7 @@
       
       <guid>https://asyncial.github.io/blog/speed-up-urxvt/</guid>
       <description>This blog post documents really quick, how you can get URxvt to be ready in less time. I measured the time, my computer needed, to start instances of URxvt to a usable shell and close it again for 25 times. I tried that with bash, dash and zsh with and without oh-my-zsh. It measured it with time(1). My test script looks like this:
-#! /bin/sh for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 do urxvt -e &#39;dash&#39; done  Of course, &amp;lsquo;dash&amp;rsquo; needs to be replaced with the shell, you want to use.</description>
+#! /bin/sh for i in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 do urxvt -e &#39;dash&#39; done Of course, &amp;lsquo;dash&amp;rsquo; needs to be replaced with the shell, you want to use.</description>
     </item>
     
     <item>
