@@ -6,10 +6,16 @@
     <description>Recent content in Fixed on asyncial</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 03 Jun 2019 16:32:00 +0200</lastBuildDate>
-    
-	<atom:link href="https://asyncial.github.io/fixed/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Thu, 12 Nov 2020 15:16:32 +0100</lastBuildDate><atom:link href="https://asyncial.github.io/fixed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Plan 9 -&gt; Linux</title>
+      <link>https://asyncial.github.io/plan-9-linux/</link>
+      <pubDate>Thu, 12 Nov 2020 15:16:32 +0100</pubDate>
+      
+      <guid>https://asyncial.github.io/plan-9-linux/</guid>
+      <description>Plan 9 from Bell Labs is one of the more interesting operating systems out there. I&amp;rsquo;ve always found it interesting to find software, that is in some way inspired by Plan 9 on other operating systems. So, to document what I find on this, I decided to make a list of Plan 9 inspired Linux programs.
+Ports This category gets the straight-up ports of Plan9 programs to Linux/Unix out of the way, before going further.</description>
+    </item>
     
     <item>
       <title>Kritische Informatik | Critical Computer Science</title>
