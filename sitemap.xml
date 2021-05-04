@@ -1,78 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://asyncial.github.io/</loc>
     <lastmod>2020-11-12T15:16:32+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://asyncial.github.io/fixed/</loc>
     <lastmod>2020-11-12T15:16:32+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://asyncial.github.io/plan-9-linux/</loc>
     <lastmod>2020-11-12T15:16:32+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://asyncial.github.io/blog/</loc>
     <lastmod>2020-06-30T14:09:11+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://asyncial.github.io/blog/kritische-informatik-critical-computer-science/</loc>
     <lastmod>2020-06-30T14:09:11+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://asyncial.github.io/kritische-informatik-critical-computer-science/</loc>
     <lastmod>2019-06-03T16:32:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://asyncial.github.io/blog/backup-your-current-vivaldi-session-automatically/</loc>
     <lastmod>2018-02-16T22:20:57+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://asyncial.github.io/blog/speed-up-urxvt/</loc>
     <lastmod>2017-09-04T01:27:17+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://asyncial.github.io/blog/the-status-of-the-qt-desktop/</loc>
     <lastmod>2017-07-26T15:03:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://asyncial.github.io/blog/organize-your-.xresources/</loc>
     <lastmod>2017-02-01T18:52:47+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://asyncial.github.io/blog/10-more-distros/</loc>
     <lastmod>2016-08-19T18:50:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://asyncial.github.io/blog/casual-distroreviews/</loc>
     <lastmod>2016-08-12T18:47:02+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://asyncial.github.io/blog/how-to-debrand-your-xperia-z3/</loc>
     <lastmod>2016-04-10T18:23:33+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://asyncial.github.io/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://asyncial.github.io/tags/</loc>
   </url>
-  
 </urlset>
